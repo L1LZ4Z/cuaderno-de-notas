@@ -4,6 +4,7 @@
 
  - [Sofware Enginnering 10th Edition - Ian Sommerville](#1)
    - [Entrevistas y tipos de entrevistas](#1.1)
+   - [Consejos para realizar entrevistas](#1.2)
 
 ## Notas
 
@@ -17,7 +18,7 @@ Las entrevistas (que son una de muchas formas de poder elicitar requisitos) pued
 
 Usualmente las entrevistas con los stakeholders deberían ser una mezcla de ambos
 
-<h4>Consejos para realizar entrevistas (p. 116)</h4>
+<h4 id="1.2">Consejos para realizar entrevistas (p. 116)</h4>
 
 Las entrevistas deberían realizarse con dos cosas en mente:
  - Es posible encontrar una serie de requisitos no anticipados previamente. Nuestro deber es abrazar y aceptar esos nuevos requisitos.
