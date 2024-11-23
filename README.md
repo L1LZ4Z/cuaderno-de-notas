@@ -16,7 +16,7 @@ Este repositorio está diseñado para facilitar el acceso y consulta de las nota
 
 1. **Descarga el repositorio:**
    ```bash
-   git clone https://github.com/L1LZ4Z/software-engineering-notes.git
+   git clone https://github.com/L1LZ4Z/cuaderno-de-notas.git
    ```
 
 2. **Abre el repositorio en VS Code:** 
