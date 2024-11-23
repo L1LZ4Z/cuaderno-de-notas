@@ -16,3 +16,11 @@ Las entrevistas (que son una de muchas formas de poder elicitar requisitos) pued
  - Entrevistas abiertas, que se asemejan más a un conversatorio
 
 Usualmente las entrevistas con los stakeholders deberían ser una mezcla de ambos
+
+<h4>Consejos para realizar entrevistas (p. 116)</h4>
+
+Las entrevistas deberían realizarse con dos cosas en mente:
+ - Es posible encontrar una serie de requisitos no anticipados previamente. Nuestro deber es abrazar y aceptar esos nuevos requisitos.
+ - Es el entrevistador el que debe arrancar y darle por donde empezar a hablar al entrevistado e ir guiándolo.
+
+Las entrevistas no son métodos infalibles. Se recomienda complementar este tipo de elicitación con otros métodos y técnicas.
