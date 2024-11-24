@@ -29,3 +29,9 @@ Las historias deben incluir en sus criterios de aceptación:
  <h4 id="2.2">Elicitación de requisitos como un proceso contínuo (p. 44)</h4>
 
  Los equipos ágiles entienden que es imposible capturar todos los requisitos "en una sola pesca".
+
+<h4>Slicing para user stories (p.76)</h4>
+
+Cuando dividimos una épica en historias de usuario, debemos pensar en el tamaño y alcance de cada historia como el de una tajada de torta. No se cortan solo por capas (por ejemplo, backend o frontend), sino desde el exterior hasta el centro. Cada historia de usuario debe ser una pieza que incluya un poco de cada parte necesaria para **entregar valor funcional completo al usuario final**.
+
+Por tanto, una historia de usuario bien definida en definitiva podría incluir cambios tanto en el front-end como en el back-end.
