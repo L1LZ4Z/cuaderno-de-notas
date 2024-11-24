@@ -1,10 +1,15 @@
 # Product Backlog
 
+## Índice
+
+ - [Sofware Enginnering 10th Edition - Ian Sommerville](#1)
+   - [User Stories: Scenarios y Acceptance Criteria](#1.1)
+
 ## Notas
 
-<h3>Sofware Enginnering 10th Edition - Ian Sommerville</h3>
+<h3 id="1.1">Sofware Enginnering 10th Edition - Ian Sommerville</h3>
 
-<h4>User Stories: Scenarios y Acceptance Criteria (p. 119)</h4>
+<h4 id="1.2">User Stories: Scenarios y Acceptance Criteria (p. 119)</h4>
 
 Las historias deben incluir en sus criterios de aceptación:
  - Lo que el usuario y el sistema esperan (como input o precondición) al empezar el escenario
