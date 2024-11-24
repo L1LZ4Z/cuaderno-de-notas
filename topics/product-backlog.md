@@ -6,6 +6,7 @@
    - [User Stories: Scenarios y Acceptance Criteria](#1.1)
  - [User Stories Applied for Agile Development - Mike Cohn](#2)
    - [Elicitación de requisitos](#2.1)
+   - [Elicitación de requisitos como un proceso contínuo](#2.2)
 
 ## Notas
 
@@ -25,6 +26,6 @@ Las historias deben incluir en sus criterios de aceptación:
 
  La elicitación de requisitos es como pescar con red. Los requisitos se encuentran allí afuera esperando a ser capturados. Depende de nosotros escoger la red adecuada (instrumentos o métodos de elicitación) para poder capturarlos.
 
- <h4>Elicitación de requisitos como un proceso contínuo (p. 44)</h4>
+ <h4 id="2.2">Elicitación de requisitos como un proceso contínuo (p. 44)</h4>
 
  Los equipos ágiles entienden que es imposible capturar todos los requisitos "en una sola pesca".
