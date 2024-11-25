@@ -51,3 +51,17 @@ Es preferible dividirlas en historias más específicas y accionables, como:
 - "Como reclutador, quiero eliminar una oferta de trabajo para mantener actualizadas las oportunidades laborales disponibles, evitando postulaciones innecesarias."
 
 De esta manera, cada historia es más concreta, enfocada y fácil de implementar, además de ser más valiosa (por que el valor que percibe el usuario es más concreto). También asegura que las historias de usuarios sean más pequeñas.
+
+<h4>Las user stories no especifican la solución (p. 79)</h4>
+
+Uno de los mayores problemas al especificar requisitos es terminar detallando una solución en lugar de expresar una necesidad o funcionalidad. 
+
+Una user story no debería incluir detalles técnicos o elementos específicos de la interfaz, ya que esto cambia el enfoque de describir una funcionalidad hacia proponer o imponer una implementación. Esto limita la creatividad del equipo para encontrar la mejor solución técnica.
+
+Un ejemplo de una user story que no sigue esta recomendación: 
+
+> "Como usuario, quiero un botón rojo en la página principal para acceder a mi perfil."
+
+Un ejemplo de una user story que sí sigue esta recomendación: 
+
+> "Como usuario, quiero acceder fácilmente a mi perfil desde la página principal para gestionar mi información personal." 
