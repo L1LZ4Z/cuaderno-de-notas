@@ -36,3 +36,17 @@ Las historias deben incluir en sus criterios de aceptación:
 Cuando dividimos una épica en historias de usuario, debemos pensar en el tamaño y alcance de cada historia como el de una tajada de torta. No se cortan solo por capas (por ejemplo, backend o frontend), sino desde el exterior hasta el centro. Cada historia de usuario debe ser una pieza que incluya un poco de cada parte necesaria para **entregar valor funcional completo al usuario final**.
 
 Por tanto, una historia de usuario bien definida en definitiva podría incluir cambios tanto en el front-end como en el back-end.
+
+<h4>Las user stories son cerradas (p. 77)</h4>
+
+Esta idea se comprende mejor con un ejemplo. En lugar de escribir historias de usuario demasiado amplias, como:
+
+> "Como reclutador, quiero gestionar las ofertas de trabajo que he creado para tener un control general de las oportunidades laborales publicadas."
+
+Es preferible dividirlas en historias más específicas y accionables, como:
+
+- "Como reclutador, quiero revisar currículums de los aplicantes al trabajo para identificar rápidamente candidatos potenciales."
+- "Como reclutador, quiero cambiar la fecha de expiración de una oferta de trabajo existente para asegurar que las posiciones permanezcan visibles mientras estén abiertas y evitar confusión en los candidatos."
+- "Como reclutador, quiero eliminar una oferta de trabajo para mantener actualizadas las oportunidades laborales disponibles, evitando postulaciones innecesarias."
+
+De esta manera, cada historia es más concreta, enfocada y fácil de implementar, además de ser más valiosa (por que el valor que percibe el usuario es más concreto). También asegura que las historias de usuarios sean más pequeñas.
