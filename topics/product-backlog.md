@@ -9,6 +9,7 @@
    - [Elicitación de requisitos como un proceso contínuo](#2.2)
    - [Slicing para user stories](#2.3)
    - [Las user stories son cerradas](#2.4)
+   - [Las user stories no especifican la solución](#2.5)
 
 ## Notas
 
@@ -52,7 +53,7 @@ Es preferible dividirlas en historias más específicas y accionables, como:
 
 De esta manera, cada historia es más concreta, enfocada y fácil de implementar, además de ser más valiosa (por que el valor que percibe el usuario es más concreto). También asegura que las historias de usuarios sean más pequeñas.
 
-<h4>Las user stories no especifican la solución (p. 79)</h4>
+<h4 id="2.5">Las user stories no especifican la solución (p. 79)</h4>
 
 Uno de los mayores problemas al especificar requisitos es terminar detallando una solución en lugar de expresar una necesidad o funcionalidad. 
 
