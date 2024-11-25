@@ -65,4 +65,26 @@ Un ejemplo de una user story que no sigue esta recomendación:
 
 Un ejemplo de una user story que sí sigue esta recomendación: 
 
-> "Como usuario, quiero acceder fácilmente a mi perfil desde la página principal para gestionar mi información personal." 
+> "Como usuario, quiero acceder fácilmente a mi perfil desde la página principal para gestionar mi información personal."
+
+<h4>Las user stories tienen un único usuario (p. 81)</h4>
+
+Las historias son más fáciles de entender si:
+ - Se escriben en voz activa (sujeto agente).
+ - Se escriben para un único rol de usuario (revisar needfinding para más detalles).
+
+Unos ejemplos de user stories que no siguen esta recomendación:
+
+> "Como vendedor o comprador, quiero ver la lista de productos para comprar productos o saber lo que he puesto a la venta."
+
+> "Como vendedor o comprador, quiero iniciar sesión en mi cuenta para usar la aplicación con mis datos personales."
+
+Unos ejemplos de user stories que sí siguen esta recomendación:
+
+> "Como comprador, quiero ver los distintos productos disponibles para saber lo que puedo comprar."
+
+> "Como vendedor, quiero ver mi lista de productos publicados para saber lo que he puesto a la venta."
+
+> "Como usuario, quiero iniciar sesión en mi cuenta para usar la aplicación con mis datos personales.
+
+Existen casos donde escribir dos veces una misma historia resulta redundante, pues el valor obtenido por distintos roles de usuario por una funcionalidad concreta es el mismo o es muy parecido. En dicho caso, es recomendable elevar las historias a nivel de ***usuario*** genérico.
