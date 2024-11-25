@@ -8,6 +8,7 @@
    - [Elicitación de requisitos](#2.1)
    - [Elicitación de requisitos como un proceso contínuo](#2.2)
    - [Slicing para user stories](#2.3)
+   - [Las user stories son cerradas](#2.4)
 
 ## Notas
 
@@ -37,7 +38,7 @@ Cuando dividimos una épica en historias de usuario, debemos pensar en el tamañ
 
 Por tanto, una historia de usuario bien definida en definitiva podría incluir cambios tanto en el front-end como en el back-end.
 
-<h4>Las user stories son cerradas (p. 77)</h4>
+<h4 id="2.4">Las user stories son cerradas (p. 77)</h4>
 
 Esta idea se comprende mejor con un ejemplo. En lugar de escribir historias de usuario demasiado amplias, como:
 
