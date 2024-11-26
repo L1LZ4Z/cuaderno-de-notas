@@ -5,8 +5,7 @@
  - [Sofware Enginnering 10th Edition - Ian Sommerville](#1)
    - [User Stories: Scenarios y Acceptance Criteria](#1.1)
  - [User Stories Applied for Agile Development - Mike Cohn](#2)
-   - [Elicitación de requisitos](#2.1)
-   - [Elicitación de requisitos como un proceso contínuo](#2.2)
+   - [Elicitación de requisitos como un proceso contínuo](#2.1)
    - [Slicing para user stories](#2.3)
    - [Las user stories son cerradas](#2.4)
    - [Las user stories no especifican la solución](#2.5)
@@ -26,15 +25,15 @@ Las historias deben incluir en sus criterios de aceptación:
  - Las cosas que pueden fallar y como se maneja el error (unhappy paths)
  - El estado de finalización del sistema al concluir
 
- <h3 id="2">User Stories Applied for Agile Development - Mike Cohn</h3>
+<h3 id="2">User Stories Applied for Agile Development - Mike Cohn</h3>
 
- <h4 id="2.1">Elicitación de requisitos (p. 43)</h4>
+<h4 id="2.1">Elicitación de requisitos como un proceso contínuo (p. 43-44)</h4>
 
- La elicitación de requisitos es como pescar con red. Los requisitos se encuentran allí afuera esperando a ser capturados. Depende de nosotros escoger la red adecuada (instrumentos o métodos de elicitación) para poder capturarlos.
+La elicitación de requisitos es como pescar con red. Los equipos ágiles entienden que es imposible capturar todos los requisitos "en una sola pesca".
 
- <h4 id="2.2">Elicitación de requisitos como un proceso contínuo (p. 44)</h4>
+Los requisitos están siempre presentes, como peces en un río en constante flujo. En cada momento, nuevos requisitos emergen, mientras otros se modifican o desaparecen. Por lo tanto, la elicitación debe ser un proceso continuo y dinámico, adaptándose a las necesidades cambiantes del proyecto.
 
- Los equipos ágiles entienden que es imposible capturar todos los requisitos "en una sola pesca".
+Además, al igual que con la pesca, el tamaño de la red que se utilice en la elicitación es crucial. Diferentes métodos y herramientas de elicitación actúan como redes de distintos tamaños: algunas son amplias y capturan una gran cantidad de requisitos de forma rápida, pero pueden ser imprecisas o abarcar demasiada información a la vez. Otras, más pequeñas y específicas, permiten una captura más detallada y precisa, pero requieren más tiempo y esfuerzo. Elegir el tamaño adecuado de la red depende de las necesidades del proyecto, el contexto y el momento en el que se encuentren los equipos en el ciclo de vida del desarrollo.
 
 <h4 id="2.3">Slicing para user stories (p.76)</h4>
 
