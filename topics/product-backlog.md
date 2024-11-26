@@ -12,6 +12,7 @@
    - [Las user stories no especifican la solución](#2.5)
    - [Las user stories tienen un único usuario](#2.6)
    - [¿Por qué usar user stories?](#2.7)
+   - [Errores frecuentes](#2.8)
 
 ## Notas
 
@@ -100,7 +101,7 @@ El uso de las user stories para modelar los requisitos de software se ha popular
  - Son ideales para la planificación y desarrollo iterativo.
  - Ofrecen un margen de libertad creativa a los desarrolladores.
 
-<h4>Errores frecuentes (p. 157)</h4>
+<h4 id="2.8">Errores frecuentes (p. 157)</h4>
 
 Hay una serie de errores que pueden identificarse a través de síntomas.
 1. Historias ***demasiado*** pequeñas:
