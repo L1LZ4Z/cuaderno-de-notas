@@ -10,6 +10,7 @@
    - [Slicing para user stories](#2.3)
    - [Las user stories son cerradas](#2.4)
    - [Las user stories no especifican la solución](#2.5)
+   - [Las user stories tienen un único usuario](#2.6)
 
 ## Notas
 
@@ -67,7 +68,7 @@ Un ejemplo de una user story que sí sigue esta recomendación:
 
 > "Como usuario, quiero acceder fácilmente a mi perfil desde la página principal para gestionar mi información personal."
 
-<h4>Las user stories tienen un único usuario (p. 81)</h4>
+<h4 id="2.6">Las user stories tienen un único usuario (p. 81)</h4>
 
 Las historias son más fáciles de entender si:
  - Se escriben en voz activa (sujeto agente).
