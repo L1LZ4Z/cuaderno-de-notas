@@ -1,5 +1,11 @@
 # Product Backlog
 
+## Notas rápidas
+
+ - Las épicas no se redactan necesariamente usando BDD, pero muchos equipos prefieren hacerlo.
+ - Las historias de usuario se redactan en primera persona.
+ - Los criterios de aceptación se redactan usando el modelo BDD en tercera persona nombrando al actor ***usuario*** de forma genérica.
+
 ## Índice
 
  - [Sofware Enginnering 10th Edition - Ian Sommerville](#1)
