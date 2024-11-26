@@ -117,3 +117,66 @@ Hay una serie de errores que pueden identificarse a través de síntomas.
 
     Como desarrollador, quiero crear una plataforma de administración de contenidos donde los usuarios puedan subir, editar y eliminar artículos, para que puedan gestionar sus publicaciones de manera eficiente.
 
+<h3>Applying BDD acceptance criteria in user stories - thoughtworks</h3>
+
+Enlace al artículo: [Applying BDD acceptance criteria in user stories](https://www.thoughtworks.com/insights/blog/applying-bdd-acceptance-criteria-user-stories)
+
+<h4>Cómo usar Given</h4>
+
+"Given" es utilizado para listar ***todas*** las precondiciones que afectan el resultado o respuesta del sistema en el "Then" al momento que ocurre el gatillo "When". Sin embargo, hay que considerar:
+ 
+1. No es necesario mencionar toda la cadena de sucesos que llevan a la precondición, solo las precondiciones en sí.
+ - Incorrecto:
+
+    Dado que el usuario se encuentra en la página "Escoger vuelo"
+
+    Y el usuario eligió un vuelo
+
+    Y el usuario omitió la opción de escoger mi asiento
+
+    Y el usuario elegió un almuerzo
+
+    Cuando el usuario confirma su selección de detalles de vuelo
+
+    Entonces se muestra un mensaje “El asiento será elegido al azar. ¿Continuar?”.
+
+ - Correcto:
+  
+    Dado que el usuario se encuentra en la página de "Detalles de vuelo"
+
+    Y el usuario omitió la opción de escoger asiento
+
+    Cuando el usuario confirma su selección de detalles de vuelo
+
+    Entonces se muestra un mensaje “El asiento será elegido al azar. ¿Continuar?”.
+
+2. Es posible agrupar las precondiciones que son similares para evitar la redundancia.
+
+ - No agrupado:
+
+    Dado que se visualiza el formulario de login
+
+    Y el usuario ingresa un correo válido
+
+    Y el usuario ingresa una contraseña válida
+
+    Cuando el usuario envía el formulario
+
+    Entonces el sistema muestra el mensaje "Bienvenido"
+
+    Y carga la página principal
+
+ - Agrupado:
+
+    Dado que se visualiza el formulario de login
+
+    Y el usuario ingresa las siguientes credenciales válidas:
+    
+   - correo
+   - contraseña
+
+    Cuando el usuario envía el formulario
+
+    Entonces el sistema muestra el mensaje "Bienvenido"
+
+    Y carga la página principal
