@@ -140,7 +140,7 @@ Enlace al artículo: [Applying BDD acceptance criteria in user stories](https://
 
     Y el usuario eligió un vuelo
 
-    Y el usuario omitió la opción de escoger mi asiento
+    Y el usuario omitió la opción de escoger su asiento
 
     Y el usuario elegió un almuerzo
 
