@@ -12,6 +12,8 @@
    - [Las user stories tienen un único usuario](#2.5)
    - [¿Por qué usar user stories?](#2.6)
    - [Errores frecuentes](#2.7)
+ - [Applying BDD acceptance criteria in user stories - thoughtworks](#3)
+   - [Cómo usar Given](#3.1)
 
 ## Notas
 
@@ -117,11 +119,11 @@ Hay una serie de errores que pueden identificarse a través de síntomas.
 
     Como desarrollador, quiero crear una plataforma de administración de contenidos donde los usuarios puedan subir, editar y eliminar artículos, para que puedan gestionar sus publicaciones de manera eficiente.
 
-<h3>Applying BDD acceptance criteria in user stories - thoughtworks</h3>
+<h3 id="3">Applying BDD acceptance criteria in user stories - thoughtworks</h3>
 
 Enlace al artículo: [Applying BDD acceptance criteria in user stories](https://www.thoughtworks.com/insights/blog/applying-bdd-acceptance-criteria-user-stories)
 
-<h4>Cómo usar Given</h4>
+<h4 id="3.1">Cómo usar Given</h4>
 
 "Given" es utilizado para listar ***todas*** las precondiciones que afectan el resultado o respuesta del sistema en el "Then" al momento que ocurre el gatillo "When". Sin embargo, hay que considerar:
  
@@ -171,7 +173,7 @@ Enlace al artículo: [Applying BDD acceptance criteria in user stories](https://
     Dado que se visualiza el formulario de login
 
     Y el usuario ingresa las siguientes credenciales válidas:
-    
+
    - correo
    - contraseña
 
