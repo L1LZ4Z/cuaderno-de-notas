@@ -99,3 +99,20 @@ El uso de las user stories para modelar los requisitos de software se ha popular
  - Permite a los desarrolladores familiarizarse con el lenguaje y reglas de negocio.
  - Son ideales para la planificación y desarrollo iterativo.
  - Ofrecen un margen de libertad creativa a los desarrolladores.
+
+<h4>Errores frecuentes (p. 157)</h4>
+
+Hay una serie de errores que pueden identificarse a través de síntomas.
+1. Historias ***demasiado*** pequeñas:
+ - Síntoma: Estimar el peso de las historias en distinto orden cambia los story points asignados.
+ - Ejemplo:
+
+    "Como artista, quiero guardar mi dibujo en .png para mostrar mi trabajo a otros en alta calidad."
+
+    "Como artista, quiero guardar mi dibujo en .webp para contar con una versión altamtente comprimida de este."
+
+2. Historias demasiado largas:
+ - Síntoma: No es posible escribir la historia en una tarjeta (referencia física).
+ - Ejemplo: 
+
+    Como desarrollador, quiero crear una plataforma de administración de contenidos donde los usuarios puedan subir, editar y eliminar artículos, para que puedan gestionar sus publicaciones de manera eficiente.
