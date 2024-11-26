@@ -11,6 +11,7 @@
    - [Las user stories son cerradas](#2.4)
    - [Las user stories no especifican la solución](#2.5)
    - [Las user stories tienen un único usuario](#2.6)
+   - [¿Por qué usar user stories?](#2.7)
 
 ## Notas
 
@@ -90,7 +91,7 @@ Unos ejemplos de user stories que sí siguen esta recomendación:
 
 Existen casos donde escribir dos veces una misma historia resulta redundante, pues el valor obtenido por distintos roles de usuario por una funcionalidad concreta es el mismo o es muy parecido. En dicho caso, es recomendable elevar las historias a nivel de ***usuario*** genérico.
 
-<h4>¿Por qué usar user stories? (p. 145)</h4>
+<h4 id="2.7">¿Por qué usar user stories? (p. 145)</h4>
 
 El uso de las user stories para modelar los requisitos de software se ha popularizado debido a que usarlas trae consigo una serie de beneficios:
  - Promueven la conversación verbal con el cliente.
