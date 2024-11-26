@@ -89,3 +89,12 @@ Unos ejemplos de user stories que sí siguen esta recomendación:
 > "Como usuario, quiero iniciar sesión en mi cuenta para usar la aplicación con mis datos personales.
 
 Existen casos donde escribir dos veces una misma historia resulta redundante, pues el valor obtenido por distintos roles de usuario por una funcionalidad concreta es el mismo o es muy parecido. En dicho caso, es recomendable elevar las historias a nivel de ***usuario*** genérico.
+
+<h4>¿Por qué usar user stories? (p. 145)</h4>
+
+El uso de las user stories para modelar los requisitos de software se ha popularizado debido a que usarlas trae consigo una serie de beneficios:
+ - Promueven la conversación verbal con el cliente.
+ - Pueden ser entendidas por todos, sin importar el conocimiento técnico.
+ - Permite a los desarrolladores familiarizarse con el lenguaje y reglas de negocio.
+ - Son ideales para la planificación y desarrollo iterativo.
+ - Ofrecen un margen de libertad creativa a los desarrolladores.
