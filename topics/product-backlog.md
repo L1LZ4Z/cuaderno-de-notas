@@ -6,12 +6,12 @@
    - [User Stories: Scenarios y Acceptance Criteria](#1.1)
  - [User Stories Applied for Agile Development - Mike Cohn](#2)
    - [Elicitación de requisitos como un proceso contínuo](#2.1)
-   - [Slicing para user stories](#2.3)
-   - [Las user stories son cerradas](#2.4)
-   - [Las user stories no especifican la solución](#2.5)
-   - [Las user stories tienen un único usuario](#2.6)
-   - [¿Por qué usar user stories?](#2.7)
-   - [Errores frecuentes](#2.8)
+   - [Slicing para user stories](#2.2)
+   - [Las user stories son cerradas](#2.3)
+   - [Las user stories no especifican la solución](#2.4)
+   - [Las user stories tienen un único usuario](#2.5)
+   - [¿Por qué usar user stories?](#2.6)
+   - [Errores frecuentes](#2.7)
 
 ## Notas
 
@@ -35,13 +35,13 @@ Los requisitos están siempre presentes, como peces en un río en constante fluj
 
 Además, al igual que con la pesca, el tamaño de la red que se utilice en la elicitación es crucial. Diferentes métodos y herramientas de elicitación actúan como redes de distintos tamaños: algunas son amplias y capturan una gran cantidad de requisitos de forma rápida, pero pueden ser imprecisas o abarcar demasiada información a la vez. Otras, más pequeñas y específicas, permiten una captura más detallada y precisa, pero requieren más tiempo y esfuerzo. Elegir el tamaño adecuado de la red depende de las necesidades del proyecto, el contexto y el momento en el que se encuentren los equipos en el ciclo de vida del desarrollo.
 
-<h4 id="2.3">Slicing para user stories (p.76)</h4>
+<h4 id="2.2">Slicing para user stories (p.76)</h4>
 
 Cuando dividimos una épica en historias de usuario, debemos pensar en el tamaño y alcance de cada historia como el de una tajada de torta. No se cortan solo por capas (por ejemplo, backend o frontend), sino desde el exterior hasta el centro. Cada historia de usuario debe ser una pieza que incluya un poco de cada parte necesaria para **entregar valor funcional completo al usuario final**.
 
 Por tanto, una historia de usuario bien definida en definitiva podría incluir cambios tanto en el front-end como en el back-end.
 
-<h4 id="2.4">Las user stories son cerradas (p. 77)</h4>
+<h4 id="2.3">Las user stories son cerradas (p. 77)</h4>
 
 Esta idea se comprende mejor con un ejemplo. En lugar de escribir historias de usuario demasiado amplias, como:
 
@@ -55,7 +55,7 @@ Es preferible dividirlas en historias más específicas y accionables, como:
 
 De esta manera, cada historia es más concreta, enfocada y fácil de implementar, además de ser más valiosa (por que el valor que percibe el usuario es más concreto). También asegura que las historias de usuarios sean más pequeñas.
 
-<h4 id="2.5">Las user stories no especifican la solución (p. 79)</h4>
+<h4 id="2.4">Las user stories no especifican la solución (p. 79)</h4>
 
 Uno de los mayores problemas al especificar requisitos es terminar detallando una solución en lugar de expresar una necesidad o funcionalidad. 
 
@@ -69,7 +69,7 @@ Un ejemplo de una user story que sí sigue esta recomendación:
 
 > "Como usuario, quiero acceder fácilmente a mi perfil desde la página principal para gestionar mi información personal."
 
-<h4 id="2.6">Las user stories tienen un único usuario (p. 81)</h4>
+<h4 id="2.5">Las user stories tienen un único usuario (p. 81)</h4>
 
 Las historias son más fáciles de entender si:
  - Se escriben en voz activa (sujeto agente).
@@ -91,7 +91,7 @@ Unos ejemplos de user stories que sí siguen esta recomendación:
 
 Existen casos donde escribir dos veces una misma historia resulta redundante, pues el valor obtenido por distintos roles de usuario por una funcionalidad concreta es el mismo o es muy parecido. En dicho caso, es recomendable elevar las historias a nivel de ***usuario*** genérico.
 
-<h4 id="2.7">¿Por qué usar user stories? (p. 145)</h4>
+<h4 id="2.6">¿Por qué usar user stories? (p. 145)</h4>
 
 El uso de las user stories para modelar los requisitos de software se ha popularizado debido a que usarlas trae consigo una serie de beneficios:
  - Promueven la conversación verbal con el cliente.
@@ -100,7 +100,7 @@ El uso de las user stories para modelar los requisitos de software se ha popular
  - Son ideales para la planificación y desarrollo iterativo.
  - Ofrecen un margen de libertad creativa a los desarrolladores.
 
-<h4 id="2.8">Errores frecuentes (p. 157)</h4>
+<h4 id="2.7">Errores frecuentes (p. 157)</h4>
 
 Hay una serie de errores que pueden identificarse a través de síntomas.
 1. Historias ***demasiado*** pequeñas:
