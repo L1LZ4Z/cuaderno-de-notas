@@ -16,9 +16,9 @@
 
 ## Notas
 
-<h3 id="1.1">Sofware Enginnering 10th Edition - Ian Sommerville</h3>
+<h3 id="1">Sofware Enginnering 10th Edition - Ian Sommerville</h3>
 
-<h4 id="1.2">User Stories: Scenarios y Acceptance Criteria (p. 119)</h4>
+<h4 id="1.1">User Stories: Scenarios y Acceptance Criteria (p. 119)</h4>
 
 Las historias deben incluir en sus criterios de aceptación:
  - Lo que el usuario y el sistema esperan (como input o precondición) al empezar el escenario
@@ -117,3 +117,4 @@ Hay una serie de errores que pueden identificarse a través de síntomas.
  - Ejemplo: 
 
     Como desarrollador, quiero crear una plataforma de administración de contenidos donde los usuarios puedan subir, editar y eliminar artículos, para que puedan gestionar sus publicaciones de manera eficiente.
+
