@@ -188,3 +188,13 @@ Enlace al artículo: [Applying BDD acceptance criteria in user stories](https://
     Entonces el sistema muestra el mensaje "Bienvenido"
 
     Y carga la página principal
+
+<h4>Cómo usar When</h4>
+
+Usar When es tan simple como escoger un solo verbo, una acción única que será la que desate o provoque el comportamiento a describir en el Then.
+
+Idealmente, el verbo escogido no hace referencia a acciones típicamente asociadas al usar de una interfaz de usuario, como "hacer click". Una buena manera de conseguir un verbo ideal es "¿Cuál sería el fin último de hacer esta acción?". 
+ - Incorrecto:
+   - Cuando el usuario hace click en el botón enviar
+ - Correcto:
+   - Cuando el usuario envía el formulario
