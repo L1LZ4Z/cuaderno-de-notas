@@ -1,4 +1,4 @@
-# 📝 Software Engineering Notes
+# 📝 Cuaderno de Notas
 
 ¡Bienvenido/a! Este repositorio contiene notas, resúmenes y ejemplos prácticos de conceptos clave sobre ingeniería de software, recopilados de libros, cursos y experiencias personales. Este repositorio es mi propio cuaderno de notas y lo realizo a modo de práctica para obligarme a usar GitHub más seguido.
 
