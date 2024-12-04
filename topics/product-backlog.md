@@ -20,6 +20,7 @@
    - [Errores frecuentes](#2.7)
  - [Applying BDD acceptance criteria in user stories - thoughtworks](#3)
    - [Cómo usar Given](#3.1)
+   - [Cómo usar When](#3.2)
 
 ## Notas
 
@@ -189,7 +190,7 @@ Enlace al artículo: [Applying BDD acceptance criteria in user stories](https://
 
     Y carga la página principal
 
-<h4>Cómo usar When</h4>
+<h4 id="3.2">Cómo usar When</h4>
 
 Usar When es tan simple como escoger un solo verbo, una acción única que será la que desate o provoque el comportamiento a describir en el Then.
 
