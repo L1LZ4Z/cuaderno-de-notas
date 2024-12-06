@@ -41,3 +41,12 @@ Git almacena tres archivos de configuración que identifican a un usuario al mom
     git config --global user.name "John Doe"
     git config --global user.email "johndoe@example.com"
 ```
+
+<h5>Revisar configuración</h5>
+
+Cuando hacemos commits, se toma la configuración del scope más específico disponible, lo que podría causar conflictos inesperados. Por ello, es imporatnte revisar la configuración para saber qué debemos corregir. A continuación se muestra un ejemplo de revisar la configuración a scope global:
+
+```
+    git config --global user.name
+    git config --global user.email
+```
