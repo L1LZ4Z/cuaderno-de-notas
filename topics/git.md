@@ -33,9 +33,9 @@ Git almacena tres archivos de configuración que identifican a un usuario al mom
  - ~/.gitconfig: es específico para un usuario del sistema operativo, mediante la bandera --global.
  - config: es específico para un proyecto y no requiere usar banderas.
 
- <h5>Cambiar configuración</h5>
+<h5>Cambiar configuración</h5>
 
- La configuración se puede cambiar mediante el comando git config con la bandera del scope deseado. A continuación se muestra un ejemplo de cambiar la configuración a scope global:
+La configuración se puede cambiar mediante el comando git config con la bandera del scope deseado. A continuación se muestra un ejemplo de cambiar la configuración a scope global:
 
 ```
     git config --global user.name "John Doe"
