@@ -4,7 +4,7 @@
 
 <h3>Pro Git, Second Edition - Scott Chacon & Ben Straub</h3>
 
-<h4>Empezando</h4>
+<h4>Acerca de Git</h4>
 
 <h5>Git como DVCS</h5>
 
