@@ -23,3 +23,12 @@ Git, por su parte, no es cualquier tipo de VCS, sino que es un DVCS (sistema de 
 A diferencia de otros DVCSs, Git no almacena "cambios" realizados a archivos, sino que a cada commit realizado almacena una copia nueva de cada archivo (excepto si el archivo es idéntico al anterior con el mismo nombre).
 
 Git revisará cada archivo antes de cada commit, asegurándose que sea imposible cambiar un archivo sin echarle la culpa a nadie por ello. Además, por cómo está diseñado Git, toda acción se puede deshacer fácilmente.
+
+<h4>Tu identidad en Git</h4>
+
+<h5>Archivos de configuración</h5>
+
+Git almacena tres archivos de configuración que identifican a un usuario al momento de hacer commits. Entre ellos están:
+ - /etc/gitconfig: son globales para TODO el sistema operativo, mediante la bandera --system.
+ - ~/.gitconfig: es específico para un usuario del sistema operativo, mediante la bandera --global.
+ - config: es específico para un proyecto y no requiere usar banderas.
