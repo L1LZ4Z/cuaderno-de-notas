@@ -61,3 +61,13 @@ Cuando hacemos commits, se toma la configuración del scope más específico dis
     git config --global user.name
     git config --global user.email
 ```
+
+<h4>Manejando repositorios</h4>
+
+<h5>Inicializar un repositorio</h5>
+
+Usando la CLI que más prefieras, puedes navegar por las carpetas y crear un repositorio desde cero (o convertir una carpeta ya con archivos en un repositorio).
+
+```
+    git init
+```
