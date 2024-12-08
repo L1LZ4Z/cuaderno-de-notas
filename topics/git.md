@@ -71,3 +71,17 @@ Usando la CLI que más prefieras, puedes navegar por las carpetas y crear un rep
 ```
     git init
 ```
+
+<h5>Clonar un repositorio</h5>
+
+Navegando por las carpetas usando la CLI puedes clonar un repositorio (.git) en la dirección actual.
+
+```
+    git clone https://github.com/L1LZ4Z/cuaderno-de-notas.git
+```
+
+Este comando creará una nueva carpeta con el nombre del repositorio en la dirección elegida. Sin embargo, el nombre puede ser personalizado agregandolo después del repositorio.
+
+```
+    git clone https://github.com/L1LZ4Z/cuaderno-de-notas.git NombrePersonalizado
+```
