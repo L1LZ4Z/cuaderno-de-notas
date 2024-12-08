@@ -85,3 +85,51 @@ Este comando creará una nueva carpeta con el nombre del repositorio en la direc
 ```
     git clone https://github.com/L1LZ4Z/cuaderno-de-notas.git NombrePersonalizado
 ```
+
+<h4>Manejando archivos y cambios</h4>
+
+<h5>Conceptos clave</h5>
+
+Esta puede ser la parte más densa de aprender. Por ello, en mis notas puntualizaré lo más posible para evitar extenderme mucho.
+
+Existen una serie de conceptos sobre como se manejan los archivos y los cambios que se les realizan. Trataré de explicarlos. La nomenclatura entre paréntesis será útil más adelante.
+ - Modified (M): Un archivo se considera modified si su contenido ha cambiado en al menos un caracter.
+   - Un archivo podría haber sido modificado, pero los cambios no se guardaron.
+   - Se debe considerar que dependiendo del IDE los cambios se guardan o no de forma automática.
+ - Staged (A): Un archivo se considera staged si tras haberse encontrado en modified, se decide añadirlo para un *commit*.
+   - Un *commit* es una confirmación de los cambios realizados a nivel local para ser enviados al repositorio externo.
+ - Staged, then modified (MM): Un archivo se considera staged, then modified si tras haber estado en staged, se le realizan otros cambios pero estos últimos no se añaden al *commit*.
+   - Es importante tener cuidado con esto porque podríamos terminar enviando una versión antigua de un archivo y causar errores.
+
+<h5>Añadir un archivo (staging)</h5>
+
+Es posible añadir todos los archivos con un solo comando.
+
+```
+    git add .
+```
+
+Sin embargo, esto puede conducir a resultados no deseados. Por ejemplo, incluir las bibliotecas o dependencias del proyecto en el repositorio. Esto no es práctico, porque normalmente se usa un gestor de paquetes para descargarlos localmente.
+
+Para evitar problemas, se recomienda hacer staging de los archivos que nosotros queremos incluir, uno por uno. Para ello se puede usar:
+
+```
+    git add nombrearchivo.extension
+```
+
+Se debe tomar en cuenta que se usa la ruta absoluta desde el punto de vista de la carpeta principal del proyecto. 
+
+Supongamos que dentro de tu repositorio tienes una carpeta app y en ella una carpeta utils y en ella se encuentra tu archivo modificado constants.js
+
+```
+    Repositorio/
+    └── app/
+        └── utils/
+            └── constants.js
+```
+
+Entonces el comando a utilizar para añadir dicho archivo sería:
+
+```
+    git add app/utils/constants.js
+```
