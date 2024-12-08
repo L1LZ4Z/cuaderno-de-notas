@@ -133,3 +133,34 @@ Entonces el comando a utilizar para añadir dicho archivo sería:
 ```
     git add app/utils/constants.js
 ```
+
+<h5>Quitando archivos (unstaging)</h5>
+
+Es posible retirar todos los archivos de stage con un solo comando.
+
+```
+    git restore --staged .
+```
+
+Similar al staging, también es posible hacer unstage de un archivo específico. Para ello puedes usar:
+
+```
+    git restore --staged nombrearchivo.extension
+```
+
+Se aplican las mismas reglas para el enrutamiento del archivo. 
+
+Supongamos que dentro de tu repositorio tienes una carpeta app y en ella una carpeta utils y en ella se encuentra tu archivo modificado constants.js
+
+```
+    Repositorio/
+    └── app/
+        └── utils/
+            └── constants.js
+```
+
+Para quitar dicho archivo del staging puedes usar
+
+```
+    git restore --staged app/utils/constants.js
+```
