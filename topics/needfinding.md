@@ -2,26 +2,28 @@
 
 ## Índice
 
- - [Sofware Enginnering 10th Edition - Ian Sommerville](#1)
-   - [Entrevistas y tipos de entrevistas](#1.1)
-   - [Consejos para realizar entrevistas](#1.2)
+- [Software Engineering 10th Edition - Ian Sommerville](#software-engineering-10th-edition---ian-sommerville)
+  - [Entrevistas y tipos de entrevistas](#entrevistas-y-tipos-de-entrevistas)
+  - [Consejos para realizar entrevistas](#consejos-para-realizar-entrevistas)
 
-## Notas
+---
 
-<h3 id="1">Sofware Enginnering 10th Edition - Ian Sommerville</h3>
+## Software Engineering 10th Edition - Ian Sommerville
 
-<h4 id="1.1">Entrevistas y tipos de entrevistas (p. 115) </h4>
+### Entrevistas y tipos de entrevistas (p. 115)
 
-Las entrevistas (que son una de muchas formas de poder elicitar requisitos) pueden ser de dos tipos:
- - Entrevistas cerradas, con una agenda de preguntas predefinida.
- - Entrevistas abiertas, que se asemejan más a un conversatorio
+Las entrevistas son una forma común de elicitar requisitos y pueden clasificarse en:
 
-Usualmente las entrevistas con los stakeholders deberían ser una mezcla de ambos
+- **Entrevistas cerradas:** tienen una agenda de preguntas predefinida.
+- **Entrevistas abiertas:** se asemejan más a un conversatorio.
 
-<h4 id="1.2">Consejos para realizar entrevistas (p. 116)</h4>
+Usualmente, las entrevistas con stakeholders combinan ambos tipos.
 
-Las entrevistas deberían realizarse con dos cosas en mente:
- - Es posible encontrar una serie de requisitos no anticipados previamente. Nuestro deber es abrazar y aceptar esos nuevos requisitos.
- - Es el entrevistador el que debe arrancar y darle por donde empezar a hablar al entrevistado e ir guiándolo.
+### Consejos para realizar entrevistas (p. 116)
 
-Las entrevistas no son métodos infalibles. Se recomienda complementar este tipo de elicitación con otros métodos y técnicas.
+Al realizar entrevistas, considera lo siguiente:
+
+- **Flexibilidad:** Es posible descubrir requisitos no anticipados. Es crucial aceptar estos nuevos requisitos.
+- **Rol del entrevistador:** El entrevistador debe iniciar y guiar la conversación.
+
+> Nota: Las entrevistas no son infalibles; deben complementarse con otros métodos y técnicas.
