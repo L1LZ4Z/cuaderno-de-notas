@@ -10,6 +10,13 @@
      - [Archivos de configuración](#1.2.1)
      - [Cambiar configuración](#1.2.2)
      - [Revisar configuración](#1.2.3)
+   - [Manejando repositorios](#1.3)
+     - [Inicializar un repositorio](#1.3.1)
+     - [Clonar un repositorio](#1.3.2)
+   - [Manejando archivos y cambios](#1.4)
+     - [Conceptos clave](#1.4.1)
+     - [Añadir un archivo (staging)](#1.4.2)
+     - [Quitando archivos (unstaging)](#1.4.3)
 
 ## Notas
 
@@ -62,9 +69,9 @@ Cuando hacemos commits, se toma la configuración del scope más específico dis
     git config --global user.email
 ```
 
-<h4>Manejando repositorios</h4>
+<h4 id="1.3">Manejando repositorios</h4>
 
-<h5>Inicializar un repositorio</h5>
+<h5 id="1.3.1">Inicializar un repositorio</h5>
 
 Usando la CLI que más prefieras, puedes navegar por las carpetas y crear un repositorio desde cero (o convertir una carpeta ya con archivos en un repositorio).
 
@@ -72,7 +79,7 @@ Usando la CLI que más prefieras, puedes navegar por las carpetas y crear un rep
     git init
 ```
 
-<h5>Clonar un repositorio</h5>
+<h5 id="1.3.2">Clonar un repositorio</h5>
 
 Navegando por las carpetas usando la CLI puedes clonar un repositorio (.git) en la dirección actual.
 
@@ -86,9 +93,9 @@ Este comando creará una nueva carpeta con el nombre del repositorio en la direc
     git clone https://github.com/L1LZ4Z/cuaderno-de-notas.git NombrePersonalizado
 ```
 
-<h4>Manejando archivos y cambios</h4>
+<h4 id="1.4">Manejando archivos y cambios</h4>
 
-<h5>Conceptos clave</h5>
+<h5 id="1.4.1">Conceptos clave</h5>
 
 Esta puede ser la parte más densa de aprender. Por ello, en mis notas puntualizaré lo más posible para evitar extenderme mucho.
 
@@ -101,7 +108,7 @@ Existen una serie de conceptos sobre como se manejan los archivos y los cambios 
  - Staged, then modified (MM): Un archivo se considera staged, then modified si tras haber estado en staged, se le realizan otros cambios pero estos últimos no se añaden al *commit*.
    - Es importante tener cuidado con esto porque podríamos terminar enviando una versión antigua de un archivo y causar errores.
 
-<h5>Añadir un archivo (staging)</h5>
+<h5 id="1.4.2">Añadir un archivo (staging)</h5>
 
 Es posible añadir todos los archivos con un solo comando.
 
@@ -134,7 +141,7 @@ Entonces el comando a utilizar para añadir dicho archivo sería:
     git add app/utils/constants.js
 ```
 
-<h5>Quitando archivos (unstaging)</h5>
+<h5 id="1.4.3">Quitando archivos (unstaging)</h5>
 
 Es posible retirar todos los archivos de stage con un solo comando.
 
