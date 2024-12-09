@@ -2,172 +2,134 @@
 
 ## Contenido
 
- - [Pro Git, Second Edition - Scott Chacon & Ben Straub](#1)
-   - [Acerca de Git](#1.1)
-     - [Git como DVCS](#1.1.1)
-     - [Cómo funciona Git](#1.1.2)
-   - [Tu identidad en Git](#1.2)
-     - [Archivos de configuración](#1.2.1)
-     - [Cambiar configuración](#1.2.2)
-     - [Revisar configuración](#1.2.3)
-   - [Manejando repositorios](#1.3)
-     - [Inicializar un repositorio](#1.3.1)
-     - [Clonar un repositorio](#1.3.2)
-   - [Manejando archivos y cambios](#1.4)
-     - [Conceptos clave](#1.4.1)
-     - [Añadir un archivo (staging)](#1.4.2)
-     - [Quitando archivos (unstaging)](#1.4.3)
+- [Pro Git, Second Edition - Scott Chacon & Ben Straub](#pro-git-second-edition---scott-chacon--ben-straub)
+  - [Acerca de Git](#acerca-de-git)
+    - [Git como DVCS](#git-como-dvcs)
+    - [Cómo funciona Git](#cómo-funciona-git)
+  - [Tu identidad en Git](#tu-identidad-en-git)
+    - [Archivos de configuración](#archivos-de-configuración)
+    - [Cambiar configuración](#cambiar-configuración)
+    - [Revisar configuración](#revisar-configuración)
+  - [Manejando repositorios](#manejando-repositorios)
+    - [Inicializar un repositorio](#inicializar-un-repositorio)
+    - [Clonar un repositorio](#clonar-un-repositorio)
+  - [Manejando archivos y cambios](#manejando-archivos-y-cambios)
+    - [Conceptos clave](#conceptos-clave)
+    - [Añadir un archivo (staging)](#añadir-un-archivo-staging)
+    - [Quitando archivos (unstaging)](#quitando-archivos-unstaging)
 
-## Notas
+---
 
-<h3 id="1">Pro Git, Second Edition - Scott Chacon & Ben Straub</h3>
+## Pro Git, Second Edition - Scott Chacon & Ben Straub
 
-<h4 id="1.1">Acerca de Git</h4>
+### Acerca de Git
 
-<h5 id="1.1.1">Git como DVCS</h5>
+#### Git como DVCS
 
-Un VCS (sistema de control de versiones en inglés) es un sistema que guarda cambios realizados a un grupo de archivos, lo cual permite:
- - Ver la evolución de un proyecto a lo largo del tiempo.
- - Saber quién realizó un cambio y en qué momento.
- - Retroceder a una versión anterior en caso de emergencia.
+Un VCS (sistema de control de versiones) guarda los cambios realizados en un grupo de archivos, lo cual permite:
 
-Git, por su parte, no es cualquier tipo de VCS, sino que es un DVCS (sistema de control de versiones distribuido). Esto significa que Git no solo guarda los cambios realizados a los archivos, sino que a todo aquel que quiera trabajar con él en un proyecto le pasará una copia COMPLETA de todas las versiones del proyecto. Esto tiene varias ventajas:
- - Permite trabajar localmente sin conexión a internet.
- - Aumenta la velocidad del trabajo al no esperar a ningún servidor.
- - Recuperar el proyecto mediante una copia local en caso se pierda el servidor central.
+- Ver la evolución de un proyecto a lo largo del tiempo.
+- Saber quién realizó un cambio y en qué momento.
+- Retroceder a una versión anterior en caso de emergencia.
 
-<h5 id="1.1.2">Cómo funciona Git</h5>
+Git es un DVCS (sistema de control de versiones distribuido). Esto significa que cada persona tiene una copia completa de todas las versiones del proyecto, lo cual ofrece:
 
-A diferencia de otros DVCSs, Git no almacena "cambios" realizados a archivos, sino que a cada commit realizado almacena una copia nueva de cada archivo (excepto si el archivo es idéntico al anterior con el mismo nombre).
+- Trabajo sin conexión a internet.
+- Mayor velocidad al no depender de un servidor.
+- Recuperación del proyecto mediante una copia local si se pierde el servidor central.
 
-Git revisará cada archivo antes de cada commit, asegurándose que sea imposible cambiar un archivo sin echarle la culpa a nadie por ello. Además, por cómo está diseñado Git, toda acción se puede deshacer fácilmente.
+#### Cómo funciona Git
 
-<h4 id="1.2">Tu identidad en Git</h4>
+A diferencia de otros DVCS, Git no almacena "cambios", sino que cada commit guarda una copia nueva de los archivos (salvo si son idénticos al anterior). Además, permite deshacer acciones fácilmente.
 
-<h5 id="1.2.1">Archivos de configuración</h5>
+### Tu identidad en Git
 
-Git almacena tres archivos de configuración que identifican a un usuario al momento de hacer commits. Entre ellos están:
- - /etc/gitconfig: son globales para TODO el sistema operativo, mediante la bandera --system.
- - ~/.gitconfig: es específico para un usuario del sistema operativo, mediante la bandera --global.
- - config: es específico para un proyecto y no requiere usar banderas.
+#### Archivos de configuración
 
-<h5 id="1.2.2">Cambiar configuración</h5>
+Git utiliza tres archivos de configuración:
 
-La configuración se puede cambiar mediante el comando git config con la bandera del scope deseado. A continuación se muestra un ejemplo de cambiar la configuración a scope global:
+- `/etc/gitconfig`: configuración global para todo el sistema operativo (`--system`).
+- `~/.gitconfig`: configuración específica para un usuario (`--global`).
+- `config`: configuración específica de un proyecto.
 
-```
-    git config --global user.name "John Doe"
-    git config --global user.email "johndoe@example.com"
-```
+#### Cambiar configuración
 
-<h5 id="1.2.3">Revisar configuración</h5>
+Usa `git config` para modificar la configuración, especificando el scope:
 
-Cuando hacemos commits, se toma la configuración del scope más específico disponible, lo que podría causar conflictos inesperados. Por ello, es imporatnte revisar la configuración para saber qué debemos corregir. A continuación se muestra un ejemplo de revisar la configuración a scope global:
-
-```
-    git config --global user.name
-    git config --global user.email
+```bash
+git config --global user.name "John Doe"
+git config --global user.email "johndoe@example.com"
 ```
 
-<h4 id="1.3">Manejando repositorios</h4>
+#### Revisar configuración
 
-<h5 id="1.3.1">Inicializar un repositorio</h5>
+Verifica la configuración activa para evitar conflictos:
 
-Usando la CLI que más prefieras, puedes navegar por las carpetas y crear un repositorio desde cero (o convertir una carpeta ya con archivos en un repositorio).
-
-```
-    git init
-```
-
-<h5 id="1.3.2">Clonar un repositorio</h5>
-
-Navegando por las carpetas usando la CLI puedes clonar un repositorio (.git) en la dirección actual.
-
-```
-    git clone https://github.com/L1LZ4Z/cuaderno-de-notas.git
+```bash
+git config --global user.name
+git config --global user.email
 ```
 
-Este comando creará una nueva carpeta con el nombre del repositorio en la dirección elegida. Sin embargo, el nombre puede ser personalizado agregandolo después del repositorio.
+### Manejando repositorios
 
+#### Inicializar un repositorio
+
+Crea un repositorio desde cero:
+
+```bash
+git init
 ```
-    git clone https://github.com/L1LZ4Z/cuaderno-de-notas.git NombrePersonalizado
+
+#### Clonar un repositorio
+
+Copia un repositorio existente:
+
+```bash
+git clone https://github.com/L1LZ4Z/cuaderno-de-notas.git
 ```
 
-<h4 id="1.4">Manejando archivos y cambios</h4>
+Puedes personalizar el nombre de la carpeta:
 
-<h5 id="1.4.1">Conceptos clave</h5>
+```bash
+git clone https://github.com/L1LZ4Z/cuaderno-de-notas.git NombrePersonalizado
+```
 
-Esta puede ser la parte más densa de aprender. Por ello, en mis notas puntualizaré lo más posible para evitar extenderme mucho.
+### Manejando archivos y cambios
 
-Existen una serie de conceptos sobre como se manejan los archivos y los cambios que se les realizan. Trataré de explicarlos. La nomenclatura entre paréntesis será útil más adelante.
- - Modified (M): Un archivo se considera modified si su contenido ha cambiado en al menos un caracter.
-   - Un archivo podría haber sido modificado, pero los cambios no se guardaron.
+#### Conceptos clave
+
+- **Modified (M):** un archivo cambiado pero no guardado.
+  - Un archivo podría haber sido modificado, pero los cambios no se guardaron.
    - Se debe considerar que dependiendo del IDE los cambios se guardan o no de forma automática.
- - Staged (A): Un archivo se considera staged si tras haberse encontrado en modified, se decide añadirlo para un *commit*.
-   - Un *commit* es una confirmación de los cambios realizados a nivel local para ser enviados al repositorio externo.
- - Staged, then modified (MM): Un archivo se considera staged, then modified si tras haber estado en staged, se le realizan otros cambios pero estos últimos no se añaden al *commit*.
-   - Es importante tener cuidado con esto porque podríamos terminar enviando una versión antigua de un archivo y causar errores.
+- **Staged (A):** un archivo añadido para commit.
+  - Un *commit* es una confirmación de los cambios realizados a nivel local para ser enviados al repositorio externo.
+- **Staged, then modified (MM):** cambios adicionales realizados tras el staging que aún no fueron añadidos.
+  - Es importante tener cuidado con esto porque podríamos terminar enviando una versión antigua de un archivo y causar errores.
 
-<h5 id="1.4.2">Añadir un archivo (staging)</h5>
+#### Añadir un archivo (staging)
 
-Es posible añadir todos los archivos con un solo comando.
+Añade todos los archivos:
 
-```
-    git add .
-```
-
-Sin embargo, esto puede conducir a resultados no deseados. Por ejemplo, incluir las bibliotecas o dependencias del proyecto en el repositorio. Esto no es práctico, porque normalmente se usa un gestor de paquetes para descargarlos localmente.
-
-Para evitar problemas, se recomienda hacer staging de los archivos que nosotros queremos incluir, uno por uno. Para ello se puede usar:
-
-```
-    git add nombrearchivo.extension
+```bash
+git add .
 ```
 
-Se debe tomar en cuenta que se usa la ruta absoluta desde el punto de vista de la carpeta principal del proyecto. 
+O especifica un archivo:
 
-Supongamos que dentro de tu repositorio tienes una carpeta app y en ella una carpeta utils y en ella se encuentra tu archivo modificado constants.js
-
-```
-    Repositorio/
-    └── app/
-        └── utils/
-            └── constants.js
+```bash
+git add app/utils/constants.js
 ```
 
-Entonces el comando a utilizar para añadir dicho archivo sería:
+#### Quitando archivos (unstaging)
 
-```
-    git add app/utils/constants.js
-```
+Retira todos los archivos del staging:
 
-<h5 id="1.4.3">Quitando archivos (unstaging)</h5>
-
-Es posible retirar todos los archivos de stage con un solo comando.
-
-```
-    git restore --staged .
+```bash
+git restore --staged .
 ```
 
-Similar al staging, también es posible hacer unstage de un archivo específico. Para ello puedes usar:
+O un archivo específico:
 
-```
-    git restore --staged nombrearchivo.extension
-```
-
-Se aplican las mismas reglas para el enrutamiento del archivo. 
-
-Supongamos que dentro de tu repositorio tienes una carpeta app y en ella una carpeta utils y en ella se encuentra tu archivo modificado constants.js
-
-```
-    Repositorio/
-    └── app/
-        └── utils/
-            └── constants.js
-```
-
-Para quitar dicho archivo del staging puedes usar
-
-```
-    git restore --staged app/utils/constants.js
+```bash
+git restore --staged app/utils/constants.js
 ```
